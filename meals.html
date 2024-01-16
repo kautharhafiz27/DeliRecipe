@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals - Recipe Website</title>
+	<link rel="stylesheet" href="CSS/header & footer.css">
+    <link rel="stylesheet" href="CSS/mealsStyles.css">
+
+</head>
+<body>
+
+    <header>
+        <img src="IMAGES & VIDEOS/GroupLogo-removebg-preview.png" alt="Logo">
+        <h1></h1>
+        <form action="#" method="get">
+            <input type="text" name="search" placeholder="Search recipes...">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menus</a>
+        <a href="meals.html" class="current">Meals</a>
+        <a href="wellness.html">Wellness</a>
+        <a href="cookery.html">Cookery</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="tips.html">Tips</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="insight.html">Insights</a>
+    </nav>
+    
+    <div class="container">
+        <div class="left-div slideshow-container">
+            <!-- Slides -->
+            <div class="mySlides">
+                <img src="IMAGES & VIDEOS/mee kari.jpg" alt="Slide 1">
+            </div>
+            <div class="mySlides">
+                <img src="IMAGES & VIDEOS/spaghetti.jpg" alt="Slide 2">
+            </div>
+            <div class="mySlides">
+                <img src="IMAGES & VIDEOS/teriyaki.jpg" alt="Slide 3">
+            </div>
+
+            <!-- Navigation dots -->
+            <div class="dot-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="left-title">Foodie Block:Unleash Flavorful Ideas for Your Next Feast!</div>
+            <div class="bottom-paragraph">
+                <p class="left-paragraph">Embark on a culinary adventure with "Nourishment Quest: Unleash Flavorful Ideas for Your Next Feast!" Dive into a world of delectable possibilities, from exotic cuisines to comforting classics. Let your taste buds be your guide as you discover the perfect bite to satisfy your cravings and elevate your dining experience.</p>
+            </div>
+        </div>
+      
+        <div class="right-div">
+            <div class="right-title">Dish Diversions</div>
+            <div class="top-paragraph">
+                <p class="right-paragraph">Feast your eyes on a symphony of flavors! Our Meals page is a culinary canvas, offering a visual feast of diverse and delectable dishes. From hearty breakfasts that kickstart your day to savory dinners that satisfy every craving, each recipe is a celebration of taste and creativity. Join us on this gastronomic journey where every image tells a story, and every dish is a masterpiece waiting to be savored. Get ready to embark on a flavorful adventure that transforms every meal into a moment of joy and indulgence. Your culinary exploration begins here.</p>
+            </div>
+            <div class="small-image">
+                <!-- Replace this image tag with a video tag -->
+                <video controls>
+                    <source src="IMAGES & VIDEOS/meals.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>   
+    <div class="container_menu">
+        <div class="menu-card">
+            <a href="recipes.html">
+                <img src="IMAGES & VIDEOS/churros.jpg" alt="Menu 1">
+            </a>
+            <h3>Churros</h3>
+            <p>Category: Dessert</p>
+        </div>
+    
+        <div class="menu-card">
+            <a href="recipes.html">
+                <img src="IMAGES & VIDEOS/nasi lemak.jpg" alt="Menu 2">
+            </a>
+            <h3>Nasi Lemak</h3>
+            <p>Category: Main Course</p>
+        </div>
+    
+        <div class="menu-card">
+            <a href="recipes.html">
+                <img src="IMAGES & VIDEOS/tteobokki.jpg" alt="Menu 3">
+            </a>
+            <h3>Tteobokki</h3>
+            <p>Category: Appetizer</p>
+        </div>
+    
+        <div class="menu-card">
+            <a href="recipes.html">
+                <img src="IMAGES & VIDEOS/Penne Arrabbiata.jpg" alt="Menu 4">
+            </a>
+            <h3>Penne Arrabbiata</h3>
+            <p>Category: Main Course</p>
+        </div>
+    </div>
+    
+    
+    
+    <footer id="page-footer">
+        <p>&copy; 2023/2024 Deli Recipe Website. All rights reserved to Group 19.</p>
+    </footer>
+</body>
+	<script>
+        // JavaScript for slideshow functionality
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        }
+    </script>
+
+</html>

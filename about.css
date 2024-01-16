@@ -1,0 +1,98 @@
+
+body {
+    flex-direction: column;
+    margin: 0;
+    flex: 1;
+}
+
+/*aboout us and person*/
+.intro{
+    background-color: rgb(218, 206, 196);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.left-content {
+    flex: 1;
+    padding: 50px;
+    text-align: center;
+    border: 2px;
+}
+
+.content__text {
+    font-family: Noto Serif;
+}
+
+.content__text h1 {
+    color:rgb(95, 62, 39);
+}
+
+.right-content-1 img {
+    max-width:80%;
+    height: auto;
+    border-radius: 8px; /* Add rounded corners to the image */
+}
+
+.right-content img {
+   max-width:50%;
+   height: auto;
+   border-radius: 8px; /* Add rounded corners to the image */
+}
+
+.text__font{
+   font-family: Noto Serif;
+}
+   
+.text__font h1 {
+   color:rgb(95, 62, 39);
+   padding-left: 50px; 
+   padding-top: 50px; 
+   font-size: 30px;
+}
+
+.forb {
+    border: 3px solid darkgoldenrod; /* Add 'solid' to specify the border style */
+    padding: 20px; /* Add padding for better visibility */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.forb h4 {
+    color: chocolate;
+}
+
+.forb p {
+    font-family: Noto Serif,serif;
+}
+
+/*footer text*/
+.footer__logo {
+   text-align:center;
+}
+
+.footer__logo img {
+   width: 30%;
+   height: 20%;
+   display: block;
+   margin: 0 auto; /* Centers the image horizontally */
+   margin-bottom: 5px;
+}
+
+.footer__text{
+   text-align: center;
+   font-family:Salsa;
+   background-color: rgb(245, 232, 216);
+   padding-bottom: 5px;
+   margin-top: 100px;
+}
+
+
+

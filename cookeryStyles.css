@@ -1,0 +1,158 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(249, 232, 220);
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Center Section styles */
+
+.top-center {
+    position: relative;
+    width: 100%;
+    height: 240px; /* Set a fixed height or adjust as needed */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.top-center .image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.top-center .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain image aspect ratio */
+}
+
+.top-center h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #e09670; /* Text color */
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    background-color: #ffffffde;
+}
+
+/* Bottom Container styles */
+
+.bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    background-color: bisque;
+}
+
+.bottom-container .image {
+    position: relative;
+}
+
+.bottom-container .image a:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white overlay */
+}
+
+.bottom-container .image .click-here-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000; /* Text color */
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.bottom-container .image a:hover .click-here-text {
+    opacity: 1; /* Display on hover */
+}
+
+.bottom-left {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content */
+    text-align: center; /* Center align text */
+    background-color: rgb(255, 243, 235); /* Add a background color */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.bottom-left .image,
+.bottom-right .image {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.bottom-container .image img {
+    max-width: 50%;
+    height: auto;
+}
+
+.bottom-container .text {
+    font-family: 'Times New Roman', sans-serif;
+    flex: 1;
+    padding: 20px;
+}
+
+.bottom-right {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content */
+    text-align: center; /* Center align text */
+    background-color: rgb(255, 243, 235); /* Add a background color */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.text {
+    background: rgba(255, 255, 255, 0.842); /* White background with 50% transparency */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.click-here-text {
+    background: rgba(255, 255, 255, 0.7); /* White background with 70% transparency */
+    padding: 10px;
+    color: #000000; /* Text color */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.top-center, .bottom-container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

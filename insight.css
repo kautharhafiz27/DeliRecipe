@@ -1,0 +1,107 @@
+body {  
+  flex-direction: column;
+  margin: 0;
+  flex: 1;
+}
+
+/*map,form and datalist*/
+.main {
+    font-size: Noto Serif;
+    color: rgb(95, 62, 39);
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+.float-container {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.float-child {
+    width: 45%;
+    padding: 50px;
+}  
+
+.contact__map {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 40px;
+    flex: 1;
+}
+
+iframe {
+    height:500px;
+    width:500px;
+    border:0;     
+}
+
+.contact__map iframe {
+    border: 5px solid rgb(211, 142, 92); 
+    border-radius: 8px;
+  }
+
+.container{     
+    padding: 60px;
+    box-sizing: border-box;
+    font-family: Noto Serif;
+    border: 2px solid rgb(220, 194, 164) ; 
+    border-radius: 10px;       
+}	
+
+.container h2 {
+    text-align: left; 
+    padding: 20px;
+    color:rgb(95, 62, 39);
+}
+  
+.rate label, .visit label {
+    text-align: left; 
+    padding:2px
+}
+
+label, input[type="name"],[type="email"],[type="rate"],[type="visit"] button {
+    font-size: 16px; 
+}
+
+input[type="name"],[type="email"],[type="rate"],[type="visit"]{
+    width: 300px; 
+    padding: 12px;  
+    box-sizing: border-box;
+}
+
+/*button*/
+.btn {
+    background-color: rgb(193, 154, 107);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 65px;
+    opacity: 0.9;
+    margin-top: 10px;
+    margin-left:230px;
+    font-family: Noto Serif,serif;
+}
+
+.btn:hover {
+    opacity:1;
+}
+
+/*text*/
+.quote {
+  text-align: center;
+  font-family: Noto Serif, serif;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: rgb(245, 232, 216);
+}
+
+
+
+
+
+
+
+
+

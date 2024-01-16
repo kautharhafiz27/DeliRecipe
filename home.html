@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Recipe Website</title>
+	<link rel="stylesheet" href="CSS/header & footer.css">
+    <link rel="stylesheet" href="CSS/homeStyles.css">
+</head>
+
+<body>
+
+	<header>
+        <img src="IMAGES & VIDEOS/GroupLogo-removebg-preview.png" alt="Logo">
+        <h1></h1>
+        <form action="#" method="get">
+            <input type="text" name="search" placeholder="Search recipes...">
+            <button type="submit">Search</button>
+        </form>
+	</header>
+
+    <nav>
+        <a href="home.html" class="current">Home</a>
+        <a href="menu.html">Menus</a>
+        <a href="meals.html">Meals</a>
+        <a href="wellness.html">Wellness</a>
+        <a href="cookery.html">Cookery</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="tips.html">Tips</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="insight.html">Insights</a>
+    </nav>
+
+    <div class="container">
+        <div class="left-content">
+            <h1>Welcome to Deli Recipe</h1>
+            <h4>Indulge your senses in a world of flavors and aromas as you embark on a culinary journey with us! At Culinary Delights, we're passionate about bringing you a diverse collection of mouthwatering recipes that cater to every palate. Whether you're a seasoned chef or a kitchen novice, our carefully curated recipes, cooking tips, and delightful culinary stories are here to inspire and guide you. Get ready to transform your kitchen into a haven of delicious creations. Let the adventure begin!</h4>
+        </div>
+
+        <div class="right-content">
+            <img src="IMAGES & VIDEOS/cikeng.png" alt="Your Image" height="512px" width="512px">
+        </div>
+    </div>
+
+    <footer id="page-footer">
+        <p>&copy; 2023/2024 Deli Recipe Website. All rights reserved to Group 19.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Add animation class to left-content after a delay
+            setTimeout(function() {
+                document.querySelector('.left-content').classList.add('show');
+            }, 500);
+    
+            // Add animation class to right-content image after a delay
+            setTimeout(function() {
+                document.querySelector('.right-content img').classList.add('show');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
